@@ -1,0 +1,22 @@
+$primary-color: rgb(21, 33, 237)
+$secondary-color: rgb(61, 179, 235)
+$tertiary-color: rgb(235, 176, 36)
+$quartenary-color: rgb(107, 97, 77)
+$quinary-color: rgb(77, 79, 107)
+$senary-color: rgb(77, 98, 107)
+$septenary-color: rgb(255, 255, 255)
+
+@mixin montserrat-titles
+    font-family: "Montserrat", serif
+    font-optical-sizing: auto
+    font-weight: 800
+    font-style: normal
+
+@mixin poppins-text($weight)
+    font-family: "Poppins", serif
+    font-weight: $weight // Opções: 400, 600, 700
+    font-style: normal
+
+body
+    background-color: $septenary-color
+    @include poppins-text(400)
