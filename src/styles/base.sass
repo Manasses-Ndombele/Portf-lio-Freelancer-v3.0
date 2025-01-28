@@ -1,5 +1,6 @@
 $primary-color: rgb(21, 33, 237)
 $secondary-color: rgb(61, 179, 235)
+$secondary-color-b: rgb(50, 142, 185)
 $tertiary-color: rgb(235, 176, 36)
 $quartenary-color: rgb(107, 97, 77)
 $quinary-color: rgb(77, 79, 107)
@@ -17,6 +18,17 @@ $septenary-color: rgb(255, 255, 255)
     font-weight: $weight // Opções: 400, 600, 700
     font-style: normal
 
+@mixin btn-cta()
+    background-color: $secondary-color
+    color: $septenary-color
+    font-size: 1.1em
+    transition: background-color .4s ease-in
+
+    &:hover,
+    &:active
+        background-color: $secondary-color-b
+
 body
     background-color: $septenary-color
+    overflow-x: hidden
     @include poppins-text(400)

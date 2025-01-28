@@ -1,0 +1,22 @@
+@use '../base'
+
+.budget-form
+    .form-label
+        font-size: 1em
+        color: base.$senary-color
+
+    .form-control
+        border: 1px solid base.$quinary-color
+        color: base.$quinary-color
+        transition: box-shadow .4s ease-in
+
+        &:focus
+            box-shadow: 0px 0px 3px base.$quinary-color
+
+    textarea
+        height: 10rem
+        resize: none
+
+    #send-form-btn
+        @include base.btn-cta()
+        font-size: 1.2em

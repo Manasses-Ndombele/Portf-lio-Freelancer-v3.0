@@ -1,0 +1,20 @@
+@use '../base'
+
+#solutions-area
+    .solutions-containers
+        height: 10rem
+
+        .icon-container
+            color: base.$senary-color
+            transition: opacity .4s ease-in
+
+            &.deactivated
+                opacity: 0 !important
+                z-index: 0 !important
+
+            &.activated
+                opacity: 1 !important
+                z-index: 1 !important
+
+            svg
+                font-size: 2.5em

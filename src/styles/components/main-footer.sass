@@ -1,0 +1,20 @@
+@use '../base'
+
+footer
+    .contacts-container
+        h2
+            color: base.$quartenary-color
+
+    nav
+        a
+            color: base.$quinary-color
+            font-size: 1.7em
+            transition: all .3s ease-out
+
+            &:hover,
+            &:focus
+                color: base.$senary-color
+                transform: scale(1.05)
+
+    .copyright
+        color: base.$quinary-color
