@@ -5,15 +5,26 @@
     h3
         font-weight: 600
         color: base.$quartenary-color
+        @include base.tablet()
+            text-align: center
 
     h4
         font-weight: 600
         color: base.$quinary-color
+        @include base.tablet()
+            text-align: center
 
     .skills-containers
         grid-template-columns: 45% 45%
+        @include base.tablet()
+            grid-template-columns: 33% 33% 33%
+            width: 90%
+            margin: 0 auto
 
         .skill-container
+            @include base.tablet()
+                align-items: center !important
+
             svg
                 font-size: 2.5em
                 color: base.$senary-color
@@ -22,6 +33,10 @@
                 color: base.$senary-color
                 font-size: 1.1em
 
-    span.auto-typed-text
-        color: base.$senary-color
-        font-size: 1.2em
+    .typed-skills-container
+        @include base.tablet()
+            text-align: center !important
+
+        span.auto-typed-text
+            color: base.$senary-color
+            font-size: 1.2em

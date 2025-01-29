@@ -7,5 +7,8 @@
         p
             color: base.$senary-color
 
-    .btn-cta
-        @include base.btn-cta()
+    .container-description
+        .btn-cta
+            @include base.btn-cta()
+            @include base.tablet()
+                width: 65% !important

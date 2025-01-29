@@ -1,6 +1,10 @@
 @use '../base'
 
 .container-description
+    @include base.tablet()
+        width: 90%
+        margin: 0 auto
+
     .title,
     .subtitle
         color: base.$primary-color

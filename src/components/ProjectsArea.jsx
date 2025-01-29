@@ -41,7 +41,7 @@ function ProjectsArea() {
                 <h2 className="subtitle">Meus projetos</h2>
                 <p>Nada melhor do que ver para crer, aqui estão alguns projetos que comprovam minhas habilidades!</p>
             </div>
-            <div className="projects-cards">
+            <div className="projects-cards d-flex flex-column gap-3">
                 <div className="project-card p-3 d-flex flex-column gap-3">
                     <div className="project-img">
                         <img className="w-100" src="/images/AliScrapp project.png" alt="Webscrapping do site do Aliexpress criado por Manassés Ndombele" />

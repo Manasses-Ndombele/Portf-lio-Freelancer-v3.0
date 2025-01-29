@@ -28,7 +28,7 @@ function MainHeader() {
                     <a href="#projects-area" className="text-decoration-none">Projetos</a>
                     <a href="#history-area" className="text-decoration-none">Quem sou eu?</a>
                 </nav>
-                <a href="#budget-container" className="main-cta-header d-block w-100 text-decoration-none d-flex justify-content-center p-3">
+                <a href="#budget-container" className="main-cta-header w-100 text-decoration-none d-flex justify-content-center p-3">
                     <button type="button" className="btn-cta border-0 w-100 rounded-3 py-2">Pedir orçamento</button>
                 </a>
             </menu>

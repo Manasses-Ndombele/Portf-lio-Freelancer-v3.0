@@ -7,6 +7,8 @@
         .icon-container
             color: base.$senary-color
             transition: opacity .4s ease-in
+            @include base.tablet()
+                height: 12rem
 
             &.deactivated
                 opacity: 0 !important
@@ -18,3 +20,8 @@
 
             svg
                 font-size: 2.5em
+
+            p
+                @include base.tablet()
+                    width: 80%
+                    margin: 0 auto
