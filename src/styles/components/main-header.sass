@@ -37,6 +37,9 @@ header
             display: flex
             justify-content: space-around
 
+        @include base.desktop()
+            justify-content: space-between
+
         &.closed
             visibility: hidden
             opacity: 0
@@ -61,6 +64,10 @@ header
             @include base.laptop()
                 flex-direction: row !important
                 gap: 1rem !important
+
+            @include base.desktop()
+                gap: 3rem !important
+                margin: .5rem 3rem
 
             a
                 color: base.$quinary-color

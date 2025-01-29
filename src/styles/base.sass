@@ -36,6 +36,10 @@ $septenary-color: rgb(255, 255, 255)
     @media screen and (min-width: 769px)
         @content
 
+@mixin desktop()
+    @media screen and (min-width: 1025px)
+        @content
+
 body
     background-color: $septenary-color
     overflow-x: hidden

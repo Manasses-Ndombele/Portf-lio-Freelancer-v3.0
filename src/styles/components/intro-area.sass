@@ -10,10 +10,17 @@
             flex-direction: row-reverse !important
             justify-content: space-between
             height: 100%
+            gap: 5rem !important
 
         .profile-area
+            @include base.desktop()
+                margin-left: 10rem
+
             p
                 color: base.$senary-color
+
+                @include base.desktop()
+                    width: 80%
 
         .container-description
             @include base.laptop()
