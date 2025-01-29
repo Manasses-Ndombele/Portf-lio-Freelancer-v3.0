@@ -1,18 +1,30 @@
 @use '../base'
 
 #history-area
-    .img-container
-        img
-            object-fit: none
-            width: 18rem
-            height: 28rem
+    .container-description
+        @include base.laptop()
+            width: 100% !important
 
-    .history-description
-        text-align: justify
-        color: base.$quinary-color
-        @include base.tablet()
-            width: 80%
+    .history-container
+        @include base.laptop()
+            display: flex
+            gap: 1rem
+            align-items: center
+            width: 90%
             margin: 0 auto
 
-        svg
-            font-size: 1.1em
+        .img-container
+            img
+                object-fit: none
+                width: 18rem
+                height: 28rem
+
+        .history-description
+            text-align: justify
+            color: base.$quinary-color
+            @include base.tablet()
+                width: 80%
+                margin: 0 auto
+
+            svg
+                font-size: 1.1em

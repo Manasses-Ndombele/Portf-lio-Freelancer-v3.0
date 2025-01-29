@@ -5,6 +5,9 @@ header
     background-color: base.$septenary-color
     transition: all .5s ease-in
     z-index: 2 !important
+    @include base.laptop()
+        display: flex
+        gap: 2.5rem
 
     .main-area
         .brand-container
@@ -24,10 +27,15 @@ header
         .main-menu-btn
             color: base.$senary-color
             font-size: 1.8em
+            @include base.laptop()
+                display: none
 
     .main-menu
         transition: all .6s ease-in-out
         transform-origin: top
+        @include base.laptop()
+            display: flex
+            justify-content: space-around
 
         &.closed
             visibility: hidden
@@ -35,6 +43,12 @@ header
             width: 0
             height: 0
             transform: scaleY(.4)
+            @include base.laptop()
+                visibility: visible !important
+                opacity: 1 !important
+                width: 100% !important
+                height: 100% !important
+                transform: none !important
 
         &.opened
             visibility: visible
@@ -44,13 +58,38 @@ header
             transform: none
 
         nav
+            @include base.laptop()
+                flex-direction: row !important
+                gap: 1rem !important
+
             a
                 color: base.$quinary-color
                 font-weight: 600
                 font-size: 1.1em
 
+                @include base.laptop()
+                    &:hover
+                        &::after
+                            width: 100%
+
+                    &::after
+                        content: ''
+                        display: block
+                        width: 0%
+                        height: 2px
+                        background-color: base.$quinary-color
+                        transition: all .4s ease-in-out
+
         .main-cta-header
+            @include base.laptop()
+                width: min-content !important
+
             .btn-cta
                 @include base.btn-cta()
                 @include base.tablet()
                     width: 70% !important
+
+                @include base.laptop()
+                    width: min-content !important
+                    white-space: nowrap
+                    padding: 0 1rem

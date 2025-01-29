@@ -2,13 +2,27 @@
 
 #intro-area
     padding-top: 6rem
+    @include base.laptop()
+        height: 100vh
 
-    .profile-area
-        p
-            color: base.$senary-color
+    .intro-area-overlay
+        @include base.laptop()
+            flex-direction: row-reverse !important
+            justify-content: space-between
+            height: 100%
 
-    .container-description
-        .btn-cta
-            @include base.btn-cta()
-            @include base.tablet()
-                width: 65% !important
+        .profile-area
+            p
+                color: base.$senary-color
+
+        .container-description
+            @include base.laptop()
+                align-items: start !important
+                text-align: left !important
+                width: 70%
+                gap: 1rem
+
+            .btn-cta
+                @include base.btn-cta()
+                @include base.tablet()
+                    width: 60% !important

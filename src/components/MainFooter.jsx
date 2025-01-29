@@ -4,7 +4,7 @@ import '../styles/components/main-footer.sass'
 
 function MainFooter() {
     return (
-        <footer className="mt-5">
+        <footer className="mt-5 pb-3">
             <div className="contacts-container">
                 <h2 className="text-capitalize text-center">Redes sociais e contatos</h2>
                 <nav className="w-100 d-flex align-items-center justify-content-center gap-3 mb-2">
