@@ -24,11 +24,11 @@ function MainHeader() {
             </div>
             <menu type="toolbar" className={`main-menu ${mainMenuStatus ? 'opened' : 'closed'} p-0 m-0`}>
                 <nav className="d-flex flex-column align-items-center gap-2 my-2">
-                    <a href="#solutions-area" className="text-decoration-none">Serviços</a>
-                    <a href="#projects-area" className="text-decoration-none">Projetos</a>
-                    <a href="#history-area" className="text-decoration-none">Quem sou eu?</a>
+                    <a href="#solutions-area" className="text-decoration-none" onClick={() => { setMainMenuStatus(false) }}>Serviços</a>
+                    <a href="#projects-area" className="text-decoration-none" onClick={() => { setMainMenuStatus(false) }}>Projetos</a>
+                    <a href="#history-area" className="text-decoration-none" onClick={() => { setMainMenuStatus(false) }}>Quem sou eu?</a>
                 </nav>
-                <a href="#budget-container" className="main-cta-header w-100 text-decoration-none d-flex justify-content-center p-3">
+                <a href="#budget-container" className="main-cta-header w-100 text-decoration-none d-flex justify-content-center p-3" onClick={() => { setMainMenuStatus(false) }}>
                     <button type="button" className="btn-cta border-0 w-100 rounded-3 py-2">Pedir orçamento</button>
                 </a>
             </menu>
