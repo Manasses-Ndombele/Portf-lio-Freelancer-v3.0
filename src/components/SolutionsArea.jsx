@@ -71,7 +71,7 @@ function SolutionsArea() {
                 <div className="icon-container w-100 d-flex flex-column align-items-center gap-2 text-center position-absolute top-0 start-0 deactivated">
                     <TbApi />
                     <h3>Integrações com APIs</h3>
-                    <p>Programs que se conectem com quaisquer APIs</p>
+                    <p>Programas que se conectem com qualquer API</p>
                 </div>
                 <div className="icon-container w-100 d-flex flex-column align-items-center gap-2 text-center position-absolute top-0 start-0 deactivated">
                     <TbApi />

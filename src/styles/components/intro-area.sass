@@ -1,5 +1,59 @@
 @use '../base'
 
+@keyframes fade-enter-left
+    from
+        opacity: .4
+        transform: translate(-5rem, 1.5rem)
+
+    to
+        opacity: 1
+        transform: none
+
+@-webkit-keyframes fade-enter-left
+    from
+        opacity: .4
+        -webkit-transform: translate(-5rem, 1.5rem)
+
+    to
+        opacity: 1
+        -webkit-transform: none
+
+@-webkit-keyframes scale-up-center
+    to
+        -webkit-transform: scale(0.5)
+
+    from
+        -webkit-transform: scale(1)
+
+@keyframes scale-up-center
+    from
+        transform: scale(0.5)
+
+    to
+        transform: scale(1)
+
+@-webkit-keyframes tracking-in-expand
+    0%
+        letter-spacing: -0.5em
+        opacity: 0
+
+    40%
+        opacity: 0.6
+
+    100%
+        opacity: 1
+
+@keyframes tracking-in-expand
+    0%
+        letter-spacing: -0.5em
+        opacity: 0
+
+    40%
+        opacity: 0.6
+
+    100%
+        opacity: 1
+
 #intro-area
     padding-top: 6rem
     @include base.laptop()
@@ -16,8 +70,14 @@
             @include base.desktop()
                 margin-left: 10rem
 
+            img
+                -webkit-animation: scale-up-center 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+                animation: scale-up-center 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
             p
                 color: base.$senary-color
+                -webkit-animation: tracking-in-expand 1s cubic-bezier(0.860, 0.000, 0.070, 1.000) both
+                animation: tracking-in-expand 1s cubic-bezier(0.860, 0.000, 0.070, 1.000) both
 
                 @include base.desktop()
                     width: 80%
@@ -33,7 +93,17 @@
                 width: 40%
                 margin: 0
 
+            h1
+                -webkit-animation: fade-enter-left 1s ease-in forwards
+                animation: fade-enter-left 1s ease-in forwards
+
+            p
+                -webkit-animation: fade-enter-left 1.3s ease-in forwards
+                animation: fade-enter-left 1s ease-in forwards
+
             .btn-cta
+                -webkit-animation: fade-enter-left 1.6s ease-in forwards
+                animation: fade-enter-left 1s ease-in forwards
                 @include base.btn-cta()
                 @include base.tablet()
                     width: 60% !important
